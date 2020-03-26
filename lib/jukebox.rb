@@ -24,7 +24,9 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
   
-  
+  if invalid_input?(songs, input)
+    puts "Invalid input, please try again"
+    
   
   puts "Phoenix - 1901"
 end
