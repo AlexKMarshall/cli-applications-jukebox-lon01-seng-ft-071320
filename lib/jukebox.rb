@@ -34,5 +34,5 @@ def is_integer?(input)
 end
 
 def out_of_range?(array, index)
-  index < 
+  (index < 0 || index >= array.length) ? true : false
 end
