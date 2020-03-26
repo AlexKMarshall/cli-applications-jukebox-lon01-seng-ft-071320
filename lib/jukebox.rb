@@ -41,7 +41,7 @@ def out_of_range?(array, index)
 end
 
 def invalid_input?(songs, input)
-  if is_integer?(input) && out_of_range(songs, input - 1)
+  if is_integer?(input) && out_of_range(songs, Integer(input) - 1)
     return true
   end
 end
