@@ -1,9 +1,12 @@
 # Add your code here
 def help
-  puts "I accept the following commands:"
-  puts "- help : displays this help message"
+  help_messages.each {|message| puts message}
 end
 
 def help_messages
-  
+  [
+    "I accept the following commands:",
+    "- help : displays this help message",
+    "- list : displays a list of songs you can play"
+    ]
 end
