@@ -32,3 +32,7 @@ end
 def is_integer?(input)
   Integer(input) rescue false
 end
+
+def out_of_range?(array, index)
+  index < 
+end
