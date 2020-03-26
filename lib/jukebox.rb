@@ -44,4 +44,5 @@ def invalid_input?(songs, input)
   if is_integer?(input) && out_of_range?(songs, Integer(input) - 1)
     return true
   end
+  if name_not_found?(songs, input)
 end
