@@ -38,3 +38,18 @@ def find_song(songs, input)
     songs.find {|song| song == input}
   end
 end
+
+def is_integer?(input)
+  Integer(input) rescue false
+end
+
+def out_of_range?(array, index)
+  (index < 0 || index >= array.length) ? true : false
+end
+
+def invalid_input?(songs, input)
+  if is_integer?(input) && out_of_range?(songs, Integer(input) - 1)
+    return true
+  end
+  if name_not_found?(songs, input)
+end
