@@ -13,5 +13,5 @@ def help_messages
     ]
 end
 
-def play
+def play(song_number)
 end
