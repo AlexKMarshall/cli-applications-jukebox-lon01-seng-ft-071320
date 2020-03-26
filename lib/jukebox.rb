@@ -34,7 +34,7 @@ end
 
 def find_song(songs, input)
   if is_integer?(input)
-    songs[input]
+    songs[Integer(input) - 1]
 end
 
 def is_integer?(input)
