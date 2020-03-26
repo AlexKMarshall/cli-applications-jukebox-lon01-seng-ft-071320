@@ -26,7 +26,8 @@ def play(songs)
   
   if invalid_input?(songs, input)
     puts "Invalid input, please try again"
-    
+    return
+  end
   
   puts "Phoenix - 1901"
 end
