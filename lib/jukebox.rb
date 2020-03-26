@@ -33,6 +33,7 @@ def play(songs)
 end
 
 def find_song(songs, input)
+  if is_integer?(input)
 end
 
 def is_integer?(input)
