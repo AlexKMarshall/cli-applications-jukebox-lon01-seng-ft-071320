@@ -28,3 +28,7 @@ def play(songs)
   
   puts "Phoenix - 1901"
 end
+
+def is_integer?(input)
+  Integer(input) rescue false
+end
