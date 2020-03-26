@@ -24,12 +24,11 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
   
-  if invalid_input?(songs, input)
-    puts "Invalid input, please try again"
-    return
-  end
+  song = find_song(songs, input)
   
-  puts "Phoenix - 1901"
+  puts "Invalid input, please try again" if !song
+
+  puts song
 end
 
 def find_song(songs, input)
@@ -37,6 +36,7 @@ def find_song(songs, input)
     songs[Integer(input) - 1]
   else
     songs.find {|song| song == input}
+  end
 end
 
 def is_integer?(input)
