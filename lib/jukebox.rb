@@ -26,7 +26,10 @@ def play(songs)
   
   song = find_song(songs, input)
   
-  puts "Invalid input, please try again" if !song
+  if !song
+    puts "Invalid input, please try again"
+    play(songs)
+  end
 
   puts song
 end
