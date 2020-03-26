@@ -7,6 +7,7 @@ def help_messages
   [
     "I accept the following commands:",
     "- help : displays this help message",
-    "- list : displays a list of songs you can play"
+    "- list : displays a list of songs you can play",
+    "- play : lets you choose a song to play",
     ]
 end
