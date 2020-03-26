@@ -12,3 +12,6 @@ def help_messages
     "- exit : exits this program"
     ]
 end
+
+def play
+end
